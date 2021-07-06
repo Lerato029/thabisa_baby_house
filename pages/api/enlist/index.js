@@ -40,7 +40,7 @@ const createApplication = async (req, res) => {
     const result = await auth(req, res);
     const { fullName, email, mobile, role } = req.body;
     const exists = await Aps.find({ user: result.id });
-    if (exists)
+    if (exists.length !== 0)
       return res.status(400).json({ err: "You can only make one application" });
     //creating new application
     const newAp = new Aps({
