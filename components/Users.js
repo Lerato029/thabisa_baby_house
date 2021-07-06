@@ -36,8 +36,8 @@ const Users = () => {
                 src={user.avatar}
                 alt={user.avatar}
                 style={{
-                  width: "40px",
-                  height: "40px",
+                  width: "20px",
+                  height: "20px",
                   overflow: "hidden",
                   objectFit: "cover",
                 }}
@@ -50,19 +50,14 @@ const Users = () => {
               {user.role === "admin" ? (
                 user.root ? (
                   <i
-                    className="fas fa-check"
-                    style={{
-                      color: "#b72ec1",
-                    }}
+                    className="fas fa-check text-success"
                   >
                     Root
                   </i>
                 ) : (
                   <i
-                    className="fas fa-check"
-                    style={{
-                      color: "#b72ec1",
-                    }}
+                    className="fas fa-check text-success"
+                    
                   ></i>
                 )
               ) : (
