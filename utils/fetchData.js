@@ -48,7 +48,7 @@ export const putData = async (url, post, token) => {
 
 //=====================================================PATCH
 export const patchData = async (url, post, token) => {
-  const res = await fetch(`http://localhost:3000/api/${url}`, {
+  const res = await fetch(`https://thabisa-baby-house.vercel.app/api/${url}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
@@ -62,7 +62,7 @@ export const patchData = async (url, post, token) => {
 
 //=====================================================DELETE
 export const deleteData = async (url, token) => {
-  const res = await fetch(`http://localhost:3000/api/${url}`, {
+  const res = await fetch(`https://thabisa-baby-house.vercel.app/api/${url}`, {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json",
