@@ -19,7 +19,7 @@ export const getData = async (url, token) => {
 //=====================================================CREATE
 export const postData = async (url, post, token) => {
  
-  const res = await fetch(`https://thabisa-baby-house.vercel.app/api/${url}`, {
+  const res = await fetch(`/api/${url}`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
