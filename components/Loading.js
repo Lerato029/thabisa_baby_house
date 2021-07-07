@@ -10,7 +10,15 @@ const Loading = () => {
         zIndex: 8,
       }}
     >
-      <section>
+      <section 
+        style={{
+        background: "rgba(0, 0, 0, 0.527)",
+        color: "white",
+        top: 0,
+        left: 0,
+        zIndex: 8,
+        }}
+      >
         <div class="loader">
           <div class="upper ball"></div>
           <div class="right ball"></div>
