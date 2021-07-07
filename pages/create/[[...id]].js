@@ -261,9 +261,7 @@ const CreateProduct = () => {
               </div>
             </div>
           </div>
-          <button type="submit" className="btn btn-success px-4 my-4">
-            {editProduct ? "Update Product" : "Create Product"}
-          </button>
+          
         </div>
         <div className="col-md-6 my-4">
           <div className="mb-3">
@@ -288,6 +286,9 @@ const CreateProduct = () => {
             ))}
           </div>
         </div>
+        <button type="submit" className="btn btn-success px-4 my-4">
+          {editProduct ? "Update Product" : "Create Product"}
+        </button>
       </form>
       <div className="row">
       <Link href="/categories">
