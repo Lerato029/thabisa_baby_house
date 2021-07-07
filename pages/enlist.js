@@ -131,7 +131,7 @@ const Enlist = () => {
         {auth.user ? (
           <>
             <div className="col-md-8 text-secondary my-3">
-              <h5>Shipping</h5>
+            
               <label htmlFor="fullName">Full Name</label>
               <input
                 type="text"
